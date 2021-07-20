@@ -8,6 +8,7 @@ class Ability_Stone:
         """ Make a Stone Object """
         self.MAX_PROB = kwargs['MAX_PROB']
         self.MIN_PROB = kwargs['MIN_PROB']
+        self.CRAFT_GOAL = (7, 7, 3)
         self.current_prob: float = self.MAX_PROB
         self.increase_ability_1 = list(['◇'] * kwargs['STONE_LEVEL'])
         self.increase_ability_2 = list(['◇'] * kwargs['STONE_LEVEL'])
@@ -33,7 +34,7 @@ class Ability_Stone:
         for index in range(len(ability_table)):
             if ability_table[index] == '◇':
                 ability_table[index] = '◆' if crafting_result else '✖'
-                self.get_current_prob(selected_ability=selected_ability, crafting_result=crafting_result)
+                self.get_current_prob(crafting_result=crafting_result)
                 self.get_recommendation()
                 break
         else:
@@ -43,9 +44,8 @@ class Ability_Stone:
         """ Get target ability object (O(1)) """
         return self.increase_ability_1 if selected_ability == 1 else self.increase_ability_2 if selected_ability == 2 else self.decrease_ability_1
 
-    def get_current_prob(self, selected_ability: int, crafting_result: bool) -> None:
+    def get_current_prob(self, crafting_result: bool) -> None:
         """ Calc Probabilities based on user request (O(1)) """
-
         if crafting_result:  # Pass Event
             if self.current_prob > self.MIN_PROB:
                 self.current_prob -= 0.1
@@ -57,6 +57,9 @@ class Ability_Stone:
 
     def get_recommendation(self) -> dict:
         """ This function is under development (O(1)) """
+        print(self.increase_ability_1)
+        print(self.increase_ability_2)
+        print(self.decrease_ability_1)
         return {'1': self.MAX_PROB, '2': 0.15, '3': 0.17}
 
     def show_status(self) -> None:

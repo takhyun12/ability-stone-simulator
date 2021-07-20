@@ -3,7 +3,6 @@ from collections import Counter
 
 if __name__ == '__main__':
     ability_stone = Ability_Stone(MAX_PROB=0.75, MIN_PROB=0.25, STONE_LEVEL=10)
-
     ability_stone.show_status()
     while True:
         try:
@@ -14,7 +13,6 @@ if __name__ == '__main__':
         except Exception as ex:
             print(ex)
             print('')
-            pass
 
     c1 = Counter(ability_stone.increase_ability_1)
     c2 = Counter(ability_stone.increase_ability_2)
