@@ -45,25 +45,15 @@ class Ability_Stone:
 
     def get_current_prob(self, selected_ability: int, crafting_result: bool) -> None:
         """ Calc Probabilities based on user request (O(1)) """
-        if selected_ability != 3:  # Increase Ability
-            if crafting_result:  # Pass Event
-                if self.current_prob > self.MIN_PROB:
-                    self.current_prob -= 0.15
-                    self.current_prob = round(self.current_prob, 2)
-            else:  # Fail Event
-                if self.current_prob < self.MAX_PROB:
-                    self.current_prob += 0.15
-                    self.current_prob = round(self.current_prob, 2)
 
-        else:  # Decrease Ability
-            if crafting_result:  # Pass Event
-                if self.current_prob < self.MAX_PROB:
-                    self.current_prob += 0.15
-                    self.current_prob = round(self.current_prob, 2)
-            else:
-                if self.current_prob > self.MIN_PROB:
-                    self.current_prob -= 0.15
-                    self.current_prob = round(self.current_prob, 2)
+        if crafting_result:  # Pass Event
+            if self.current_prob > self.MIN_PROB:
+                self.current_prob -= 0.1
+                self.current_prob = round(self.current_prob, 2)
+        else:  # Fail Event
+            if self.current_prob < self.MAX_PROB:
+                self.current_prob += 0.1
+                self.current_prob = round(self.current_prob, 2)
 
     def get_recommendation(self) -> dict:
         """ This function is under development (O(1)) """
