@@ -57,9 +57,6 @@ class Ability_Stone:
 
     def get_recommendation(self) -> dict:
         """ This function is under development (O(1)) """
-        print(self.increase_ability_1)
-        print(self.increase_ability_2)
-        print(self.decrease_ability_1)
         return {'1': self.MAX_PROB, '2': 0.15, '3': 0.17}
 
     def show_status(self) -> None:

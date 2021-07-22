@@ -1,0 +1,175 @@
+{
+    "details": [
+        {
+            "current_prob": "0.75",
+            "crafting_result": "False",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_2": "['✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "time_stamp": "2021-07-22 14:22:39",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.65",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "time_stamp": "2021-07-22 14:23:17",
+            "increase_ability_2": "['✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.55",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:25:03",
+            "increase_ability_1": "['◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.65",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "time_stamp": "2021-07-22 14:25:32",
+            "crafting_result": "False",
+            "increase_ability_2": "['✖', '✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.55",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "time_stamp": "2021-07-22 14:25:34",
+            "increase_ability_2": "['✖', '✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.65",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "time_stamp": "2021-07-22 14:25:34",
+            "crafting_result": "False",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.55",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:25:35",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.45",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:25:35",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.55",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '✖', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "crafting_result": "False",
+            "time_stamp": "2021-07-22 14:25:36",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.65",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '✖', '✖', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "time_stamp": "2021-07-22 14:25:37",
+            "crafting_result": "False",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.55",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '✖', '✖', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "time_stamp": "2021-07-22 14:25:37",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◆', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.45",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◆', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:25:37",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '✖', '✖', '◆', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.35",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◆', '◆', '◆', '✖', '✖', '◆', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "time_stamp": "2021-07-22 14:25:38",
+            "crafting_result": "True",
+            "increase_ability_2": "['✖', '✖', '✖', '✖', '◆', '◆', '◆', '◆', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.65",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:33:01",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.55",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:33:02",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.45",
+            "crafting_result": "True",
+            "event_name": "crafting_log",
+            "increase_ability_2": "['◆', '◆', '✖', '◆', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:33:08",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.45",
+            "event_name": "crafting_log",
+            "crafting_result": "True",
+            "increase_ability_2": "['◆', '◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:33:08",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "current_prob": "0.55",
+            "crafting_result": "False",
+            "event_name": "crafting_log",
+            "increase_ability_2": "['◆', '◆', '✖', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "time_stamp": "2021-07-22 14:33:08",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']"
+        },
+        {
+            "current_prob": "0.55",
+            "decrease_ability_1": "['◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "increase_ability_1": "['◆', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇', '◇']",
+            "event_name": "crafting_log",
+            "crafting_result": "False",
+            "time_stamp": "2021-07-22 14:33:08",
+            "increase_ability_2": "['◆', '◆', '✖', '◆', '✖', '◇', '◇', '◇', '◇', '◇']"
+        }
+    ]
+}
