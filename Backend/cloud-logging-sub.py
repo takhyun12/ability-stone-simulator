@@ -21,10 +21,10 @@ def callback(message):
         print(message_dict)
 
         # Storage
-        crafting_log_path = 'Storage/crafting_log.json'
+        crafting_log_path = 'Storage/craft_log.json'
         with open(crafting_log_path, encoding='UTF8') as file:
             json_data = json.load(file)
-        json_data['details'].append(message_dict)
+        json_data['craft_log'].append(message_dict)
         with open(crafting_log_path, mode='w', encoding='UTF8') as file:
             json.dump(json_data, file, indent=4, ensure_ascii=False)
     message.ack()
