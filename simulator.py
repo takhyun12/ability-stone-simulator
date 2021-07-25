@@ -11,10 +11,12 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = CREDENTIALS_PATH
 
 class PubFunction:
     def logging(**self: dict) -> None:
-        data = 'pub/sub message for logging!'
+        data = '{"name": "kkk", "age": "4444"}'
         data = data.encode('utf-8')
+        logging_publisher.publish(TOPIC_PATH, data)
         attributes = {str(key): str(value) for key, value in self.items()}
-        logging_publisher.publish(TOPIC_PATH, data, **attributes)
+        print(attributes)
+        #logging_publisher.publish(TOPIC_PATH, data, **attributes)
 
 
 if __name__ == '__main__':
@@ -24,17 +26,19 @@ if __name__ == '__main__':
     ability_stone.show_status()
     while True:
         try:
+            selected_ability = int(input("돌을 선택하세요(1~3) : "))
             crafting_result = ability_stone.crafting()
-            ability_stone.simulation(selected_ability=int(input("돌을 선택하세요(1~3) : ")), crafting_result=crafting_result)
+
+            ability_stone.simulation(selected_ability=selected_ability, crafting_result=crafting_result)
             ability_stone.show_status()
 
             PubFunction.logging(time_stamp=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                           event_name='crafting_log',
-                           crafting_result=crafting_result,
-                           current_prob=ability_stone.current_prob,
-                           increase_ability_1=ability_stone.increase_ability_1,
-                           increase_ability_2=ability_stone.increase_ability_2,
-                           decrease_ability_1=ability_stone.decrease_ability_1)
+                                selected_ability=selected_ability,
+                                crafting_result=crafting_result,
+                                current_prob=ability_stone.current_prob,
+                                increase_ability_1=Counter(ability_stone.increase_ability_1),
+                                increase_ability_2=Counter(ability_stone.increase_ability_2),
+                                decrease_ability_1=Counter(ability_stone.decrease_ability_1))
 
             if '◇' not in ability_stone.increase_ability_1 and '◇' not in ability_stone.increase_ability_2 and '◇' not in ability_stone.decrease_ability_1:
                 break
