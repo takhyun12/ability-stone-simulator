@@ -6,7 +6,7 @@ from google.cloud import pubsub_v1
 from ability_stone import Ability_Stone
 
 TOPIC_PATH = 'projects/ability-stone-simulator/topics/logging-topic'
-CREDENTIALS_PATH = 'Resource/private-key.json'
+CREDENTIALS_PATH = 'Resource/pubsub_private_key.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = CREDENTIALS_PATH
 
 

@@ -1,7 +1,7 @@
 from google.cloud import storage
 import json
 
-storage_client = storage.Client.from_service_account_json('Resource/bucket_key.json')
+storage_client = storage.Client.from_service_account_json('Resource/bucket_private_key.json')
 
 BUCKET_NAME = 'craft-log-bucket'
 BUCKET = storage_client.get_bucket(BUCKET_NAME)

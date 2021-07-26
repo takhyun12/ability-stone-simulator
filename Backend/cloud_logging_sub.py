@@ -3,7 +3,7 @@ import json
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
 
-credentials_path = 'Resource/private_key.json'
+credentials_path = 'Resource/pubsub_private_key.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 timeout = 5.0
