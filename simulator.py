@@ -14,6 +14,7 @@ class PubFunction:
     def send_craft_log(**self: dict) -> None:
         json_data = json.dumps(self, indent=4, ensure_ascii=False)
         data = json_data.encode('utf-8')
+        print(data)
         publisher.publish(TOPIC_PATH, data)
 
 

@@ -8,12 +8,16 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 timeout = 5.0
 subscriber = pubsub_v1.SubscriberClient()
-subscription_path = 'projects/ability-stone-simulator/subscriptions/logging-topic-sub'
+subscription_path = 'projects/ability-stone-simulator/subscriptions/log_topic-sub'
 
 
 def callback(message):
     # Message
-    message_dict = dict()
+    print(message.data)
+
+    message.ack()
+
+    '''
     if message.attributes:
         for key in message.attributes:
             value = message.attributes.get(key)
@@ -21,6 +25,7 @@ def callback(message):
         print(message_dict)
 
         # Storage
+
         crafting_log_path = 'Storage/craft_log.json'
         with open(crafting_log_path, encoding='UTF8') as file:
             json_data = json.load(file)
@@ -29,7 +34,7 @@ def callback(message):
 
         with open(crafting_log_path, mode='w', encoding='UTF8') as file:
             json.dump(json_data, file, indent=4, ensure_ascii=False)
-    message.ack()
+    '''
 
 
 streaming_pull_future = subscriber.subscribe(subscription_path, callback=callback)
